@@ -31,6 +31,16 @@ Point* getPoint() {
 }
 
 EMSCRIPTEN_KEEPALIVE
+char* inverseImg(char* img, int size) {
+	int i;
+	for (i = 0; i < size; i++) {
+		img[i] = 255 - img[i];
+	}
+
+	return img;
+}
+
+EMSCRIPTEN_KEEPALIVE
 Point* createPoint(int x, int y, char* name) {
 	Point *p = malloc(sizeof(Point));
 	p->x = x;
