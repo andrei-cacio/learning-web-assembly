@@ -14,4 +14,3 @@ JavaScript API covered:
 - `Module.getValue()`
 - `Modle.HEAP8`
 - `Module.HREAP32`
-
