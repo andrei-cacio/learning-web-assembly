@@ -15,7 +15,7 @@ Goals:
 - learn to debug a wasm module
 - learn to expose JS functions to wasm
 
-## Notes:
+## Everything I have learnt:
 
 ### Working with WebAssembly's Memory in Rust
 Coming from a high level language like JavaScript you can imagine my enthusiasm when I found out that I have to deal with memory management. Luckily I still have some knowledge on this subject back from college. Stashed up in my brain somewhere, just have to dig it up.
