@@ -15,6 +15,8 @@ Goals:
 - learn to debug a wasm module
 - learn to expose JS functions to wasm
 
+Sepcial thanks to [Shepmaster](https://stackoverflow.com/users/155423/shepmaster) for the highly detailed [SO answers](https://stackoverflow.com/questions/50415623/cant-get-imageload-from-memory-to-work-when-compiled-to-webassembly)
+
 ## Everything I have learnt:
 
 ### Working with WebAssembly's Memory in Rust
