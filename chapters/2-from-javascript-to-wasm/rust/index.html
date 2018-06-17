@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+	async function compile(wasmFile = 'main.wasm') {
+		const wasmModule = await fetch(wasmFile);
+		const buff = await wasmModule.arrayBuffer();
+		const module = await WebAssembly.instantiate(buff, {
+			env: {
+				log_nr: nr => console.log(nr),
+			}
+		});
+
+		return module
+	}
+
+	compile().then(m => {
+		m.instance.exports.log_lop();
+	});
+</script>
+
+</body>
+</html>
